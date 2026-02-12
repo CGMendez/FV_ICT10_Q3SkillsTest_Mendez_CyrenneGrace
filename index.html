@@ -46,23 +46,36 @@
 </head>
 <body>
 
+    <!-- Centers everything inside the page -->
     <center>
+
+    <!-- Card container for the form -->
     <div class="card">
+
+        <!-- Title of the form -->
         <h1 class="card-title">Create Account</h1>
 
         <br><br>
-        <input type="text" id="user" placeholder="Enter User" min="0" max="7">
+
+        <!-- Username input (must be at least 8 characters) -->
+        <input type="text" id="user" placeholder="Enter User" minlength="8">
+
         <br><br>
 
+        <!-- Password input (characters hidden as dots) -->
         <input type="password" id="pass" placeholder="Enter Password">
         
         <br><br>
         
+        <!-- Button that triggers the sign_up Python function -->
         <button id="sign_up" py-click="sign_up">Sign Up</button>
 
+        <!-- Paragraph where validation messages will appear -->
         <p id="output"></p>
+
     </div>
 
+    <!-- Links the external Python file -->
     <script type="py" src="main.py"></script>
 
     </center>
