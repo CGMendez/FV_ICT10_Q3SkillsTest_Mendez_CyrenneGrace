@@ -1,5 +1,3 @@
-# Import document to access HTML elements
-# Import display (though not used in this version)
 from pyscript import document, display
 
 # Function that runs when the Sign Up button is clicked
@@ -41,3 +39,4 @@ def sign_up(event):
     else:
         # If all conditions are satisfied
         output.innerText = "Account created successfully!"
+
