@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+
+    <style>
+        body{
+            font-family: Gill Sans;
+            background-color: white;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+            justify-content: center;
+        }
+        .card{
+            background: white;
+            padding: 30px;
+            width: 450px;
+            border-radius: 20px;
+            border: solid black;
+            padding-bottom: 50px
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+    <div class="card">
+        <h1 class="card-title">Create Account</h1>
+
+        <label for="email">Email:</label>
+        <br><br>
+        <input type="text" id="user" placeholder="Enter User">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <br><br>
+        <input type="text" id="pass" placeholder="Enter Password">
+    <br><br>
+    <button id="sign_up" py-click="sign_up">Sign Up</button>
+
+    </div>
+    
+    <div class="result" id="output"></div> 
+    <script type="py" src="main.py"></script>
+
+    </center>
+</body>
+</html>
